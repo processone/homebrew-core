@@ -4,7 +4,6 @@ class Ejabberd < Formula
   url "https://static.process-one.net/ejabberd/downloads/20.12/ejabberd-20.12.tgz"
   sha256 "9d9c5d617472bf851e8cf2c7353fe9e82aef5b6d8aa28eeb6528bde8a463a854"
   license "GPL-2.0-only"
-  revision 1
 
   bottle do
     cellar :any
