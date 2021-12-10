@@ -3,17 +3,17 @@ class Jello < Formula
 
   desc "Filter JSON and JSON Lines data with Python syntax"
   homepage "https://github.com/kellyjonbrazil/jello"
-  url "https://files.pythonhosted.org/packages/45/c2/a96ee3ed71c8903c23bdb8a95ade6abdbcbd2dec75b1c7812d4b4feabf8b/jello-1.4.6.tar.gz"
-  sha256 "36d8391e13cb158e7407d14bbabd3f0ddb051bc3bb215780c4b9de8db93b3b5b"
+  url "https://files.pythonhosted.org/packages/39/35/cb9eacaab1d7845fc5f2dd086e31dc980cfeec563a4e070f980ecc6c025a/jello-1.5.0.tar.gz"
+  sha256 "62aff5a06761457ac72285a377cdfd7f8555fe1c791e7c9e7783711266bb4f30"
   license "MIT"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_monterey: "7abeceac18137ecd077bc98f24d4f227b29cf49715ba42c9aef1a4e87d5f8f6b"
-    sha256 cellar: :any_skip_relocation, arm64_big_sur:  "7abeceac18137ecd077bc98f24d4f227b29cf49715ba42c9aef1a4e87d5f8f6b"
-    sha256 cellar: :any_skip_relocation, monterey:       "c946e261f4bfc62940677a823aa95c22b64007b8df11530980b9d42434d0fae1"
-    sha256 cellar: :any_skip_relocation, big_sur:        "c946e261f4bfc62940677a823aa95c22b64007b8df11530980b9d42434d0fae1"
-    sha256 cellar: :any_skip_relocation, catalina:       "c946e261f4bfc62940677a823aa95c22b64007b8df11530980b9d42434d0fae1"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:   "abc30821762aa85b173c0ba245c5eba03f5d707de12df38e58456101a8fcc0d1"
+    sha256 cellar: :any_skip_relocation, arm64_monterey: "55573f8a05b8350f9b33be56dd3525f052e06c4e79a32e5c6065ec6ba5bc7368"
+    sha256 cellar: :any_skip_relocation, arm64_big_sur:  "55573f8a05b8350f9b33be56dd3525f052e06c4e79a32e5c6065ec6ba5bc7368"
+    sha256 cellar: :any_skip_relocation, monterey:       "5998cfc1dbd12015b6d38afd4b6ec31a41cf4eb16a844e263e4ac80088bdce80"
+    sha256 cellar: :any_skip_relocation, big_sur:        "5998cfc1dbd12015b6d38afd4b6ec31a41cf4eb16a844e263e4ac80088bdce80"
+    sha256 cellar: :any_skip_relocation, catalina:       "5998cfc1dbd12015b6d38afd4b6ec31a41cf4eb16a844e263e4ac80088bdce80"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:   "22d0856d7579b6634ee3e249315372f2c7a1272dd52917b7b50ffe66607f39ba"
   end
 
   depends_on "python@3.10"
@@ -25,7 +25,7 @@ class Jello < Formula
 
   def install
     virtualenv_install_with_resources
-    man1.install "jello/man/jello.1"
+    man1.install "man/jello.1"
   end
 
   test do

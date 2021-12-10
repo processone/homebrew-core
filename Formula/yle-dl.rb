@@ -1,18 +1,18 @@
 class YleDl < Formula
   desc "Download Yle videos from the command-line"
   homepage "https://aajanki.github.io/yle-dl/index-en.html"
-  url "https://files.pythonhosted.org/packages/63/7c/d1ef5a4b7fefe2190a1a7cebdb2332ef382f1f5e491c55721bf7819ef20b/yle-dl-20211203.tar.gz"
-  sha256 "1360f0357474a52ceba937aed78a0fed0788073b1db9b77bc70051733f09a0c7"
+  url "https://files.pythonhosted.org/packages/d3/fd/6fb8f17bf3d25c611450b1d1364e0081437819e548579620e57fc8c7d0eb/yle-dl-20211207.tar.gz"
+  sha256 "ea361ae3a9d7eec022b449a91039881615b7486c567903915ca9d27aa654faac"
   license "GPL-3.0-or-later"
   head "https://github.com/aajanki/yle-dl.git", branch: "master"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_monterey: "e7fa06c63924a4262f95dda0dc0b730260cc520805d13da7ee296b0422ad07de"
-    sha256 cellar: :any_skip_relocation, arm64_big_sur:  "e3d2f2d81c485c62b5bb1e49c6c896c866e82fe802848a9ac226d223f20fa781"
-    sha256 cellar: :any_skip_relocation, monterey:       "0673341a156aaf75479cd16bf6c32fbdfd2cd50f4422d9fdd87aa6ba3b869f65"
-    sha256 cellar: :any_skip_relocation, big_sur:        "cbde5cb3fbec1876a1a6b584747f2fd0c3681ddcee88a8c53b5323bd2b74ed8a"
-    sha256 cellar: :any_skip_relocation, catalina:       "fd329685ceccf488682a015b58d6f6ba58b66660a6ee342ea691cd4c915f700c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:   "d386bed9cb0f9ed7ddf6d2c34d699b9743186ad9cf25f70fb986f70753b56a0f"
+    sha256 cellar: :any_skip_relocation, arm64_monterey: "7c51e61feb5eccec2b4117329d7ed3e2167bd16e6f70a5ded706282b8f1587d1"
+    sha256 cellar: :any_skip_relocation, arm64_big_sur:  "6ffb9b7e21539aabc49e2c0ea751fd39af9c065a5f31d18c8c14fa3e75870499"
+    sha256 cellar: :any_skip_relocation, monterey:       "884c9487b3507bfaa54a113a26d13c3ce6a706dbf6626ee1fd9da5418877edc9"
+    sha256 cellar: :any_skip_relocation, big_sur:        "ea071ab1528b4b9d17050b313b4c00cb524b77ffe93b61a6fa5fa9b3f0e39569"
+    sha256 cellar: :any_skip_relocation, catalina:       "d66b7727dbfcf6a0347b5e0bec954ae37f092e823e9086fcac0a3bd115f3e054"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:   "482ed2db37a412c593f34a28599ea1576b76d32f220ba4efcd03490d50a5af7c"
   end
 
   depends_on "ffmpeg"
